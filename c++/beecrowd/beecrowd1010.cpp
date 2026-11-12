@@ -29,3 +29,21 @@ Exemplos:
   Saída:
     VALOR A PAGAR: R$ 30.20
 */
+
+#include <iostream>
+#include <iomanip>
+
+int main(){
+
+  int cod1, qtd1, cod2, qtd2;
+  float preco1,preco2;
+
+  std::cin >> cod1 >> qtd1 >> preco1;
+  std::cin >> cod2 >> qtd2 >> preco2;
+
+  float valortotal =  (qtd1 * preco1) + (qtd2 * preco2);
+
+  std::cout << "VALOR A PAGAR: R$ "<< std::fixed << std::setprecision(2)<< valortotal << std::endl;
+    
+  return 0;
+}

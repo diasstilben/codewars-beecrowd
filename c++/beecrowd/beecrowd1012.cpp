@@ -34,3 +34,24 @@ Exemplos:
     QUADRADO: 108.160
     RETANGULO: 132.080
 */
+#include <iostream>
+#include <iomanip>
+
+int main(){
+
+  double A, B, C;
+  std::cin >> A >> B >> C;
+  double areatrig =  (A * C) / 2;
+  double areacirc =  3.14159 * (C * C);
+  double areatrap =  ((A + B) * C ) / 2;
+  double areaquadr =  B * B;
+  double arearetang = A * B;
+
+  std::cout <<"TRIANGULO: " << std::fixed << std::setprecision(3) << areatrig << std::endl;
+  std::cout <<"CIRCULO: " << std::fixed << std::setprecision(3) << areacirc << std::endl;
+  std::cout <<"TRAPEZIO: " << std::fixed << std::setprecision(3) << areatrap << std::endl;
+  std::cout <<"QUADRADO: " << std::fixed << std::setprecision(3) << areaquadr << std::endl;
+  std::cout <<"RETANGULO: " << std::fixed << std::setprecision(3) << arearetang << std::endl;
+
+  return 0;
+}

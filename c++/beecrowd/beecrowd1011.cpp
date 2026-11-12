@@ -27,3 +27,20 @@ Exemplos:
   Saída:
     VOLUME = 14797486501.627
 */
+#include <iostream>
+#include <iomanip> 
+
+int main()
+{
+
+  double raio;
+  
+  std::cin >> raio;
+  double volume =  (4/3.0) * (3.14159) * (raio * raio * raio);
+
+  std::cout <<"VOLUME = " << std::fixed << std::setprecision(3) << volume << std::endl; 
+
+
+
+  return 0;
+}
