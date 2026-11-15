@@ -29,3 +29,17 @@ Exemplos:
   Saída:
     122.833
 */
+#include <iostream>
+#include <iomanip>
+int main()
+{
+  int a,b;
+  
+  std::cin >> a >> b;
+  float c = (a * b) / 12.0;
+  std::cout << std::fixed << std::setprecision(3) << c << std::endl;
+
+
+
+  return 0;
+}

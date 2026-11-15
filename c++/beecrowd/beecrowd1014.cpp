@@ -29,3 +29,15 @@ Exemplos:
   Saída:
     24.857 km/l
 */
+#include <iostream>
+#include <iomanip>
+
+int main(){
+
+  float a,b;
+  std::cin >> a >> b;
+  float total = a / b;
+  std::cout << std::fixed << std::setprecision(3) << total << " km/l" << std::endl;
+
+  return 0;
+}

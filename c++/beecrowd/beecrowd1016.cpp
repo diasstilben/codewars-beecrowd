@@ -28,3 +28,14 @@ Exemplos:
   Saída:
     14 minutos
 */
+#include <iostream>
+
+int main()
+{
+  int a;
+  std::cin >> a ;
+  std::cout << (a * 2) << " minutos" <<std::endl;
+
+
+  return 0;
+}

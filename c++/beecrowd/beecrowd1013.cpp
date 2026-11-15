@@ -23,7 +23,6 @@ Exemplos:
 */
 #include <cstdlib>
 #include <iostream>
-#include <math.h>
 
 int main(){
 
@@ -31,7 +30,7 @@ int main(){
   std::cin >> a >> b >> c;
   int maiorab = (a + b + abs(a - b)) / 2;
   int maiorabc = (maiorab + c + abs(maiorab - c)) / 2;
-  std::cout << maiorabc << "eh o maior" << std::endl;
+  std::cout << maiorabc << " eh o maior" << std::endl;
   
 
   return 0;
