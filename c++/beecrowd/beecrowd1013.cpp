@@ -21,3 +21,18 @@ Exemplos:
   Saída:
     217 eh o maior
 */
+#include <cstdlib>
+#include <iostream>
+#include <math.h>
+
+int main(){
+
+  int a,b,c;
+  std::cin >> a >> b >> c;
+  int maiorab = (a + b + abs(a - b)) / 2;
+  int maiorabc = (maiorab + c + abs(maiorab - c)) / 2;
+  std::cout << maiorabc << "eh o maior" << std::endl;
+  
+
+  return 0;
+}
